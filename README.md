@@ -42,6 +42,7 @@ A Variable is used to create a placeholder for specific data values.
 
 Functions are used to create useable commands.
 
+
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
