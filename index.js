@@ -229,8 +229,8 @@ console.log('Task 2', artists[8]['name'])
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(artists, i=0) {
-  return `the artist at ${artists[i]['id']} is ${artists[i]['name']}`
+function getArtistByIndex(array, i=0) {
+  return `the artist at index ${array[i]['id']} is ${array[i]['name']}`
 }  
 
 console.log('Task 3', getArtistByIndex(artists, 6))
@@ -244,10 +244,10 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(artists){
-  /*Your Code Here*/
-}
+function get20s(){
 
+}
+  
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -259,10 +259,11 @@ function get20s(artists){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(arr, i){
+   arr.pop(i)
+   return arr.length
 }
-   
+   console.log('Task 5', removeArtist(artists, 0))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -280,10 +281,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arr, i){
+    arr.push({ 
+      id: '20',
+      name: 'Bradford Meziere', 
+      years: '2001 - Current',
+      genre: 'Web Design', 
+      nationality: 'American',
+      bio: 'Born and raised in Oklahoma City, Oklahoma. I plan to get out of here at some point.'
+    })
+    return arr
   }
-
+console.log('Task 6', addArtist(artists, 0))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
